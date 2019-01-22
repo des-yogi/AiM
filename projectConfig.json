@@ -11,10 +11,19 @@
     "form": [],
     "table": [],
     "burger": [],
-    "modal": [],
     "close": [],
     "object-fit-polyfill": [],
-    "is-mobile": []
+    "is-mobile": [],
+    "catalog-block": [],
+    "features-block": [],
+    "slider-block": [],
+    "specifications-block": [],
+    "page-404": [],
+    "about": [],
+    "contacts": [],
+    "map": [],
+    "copyrights": [],
+    "socials": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -22,8 +31,7 @@
     "./src/scss/functions.scss",
     "../../node_modules/swiper/dist/css/swiper.css"
   ],
-  "addCssAfter": [
-  ],
+  "addCssAfter": [],
   "singleCompiled": [
     "./node_modules/normalize.css/normalize.css"
   ],
