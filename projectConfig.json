@@ -23,7 +23,8 @@
     "contacts": [],
     "map": [],
     "copyrights": [],
-    "socials": []
+    "socials": [],
+    "lang-switcher": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

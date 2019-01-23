@@ -12,7 +12,6 @@
   $block-name:                &; // #{$block-name}__element
 
   box-sizing: border-box;
-  font-size: 15px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -ms-overflow-style: scrollbar;
   -ms-text-size-adjust: 100%; // stylelint-disable-line  property-no-vendor-prefix
@@ -116,13 +115,13 @@ img {
   display: block;
   width: 100%;
   min-height: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   background: none;
 
   @media (min-width: $screen-md) {
-    padding-left: 20px;
-    padding-right: 20px;
+    //padding-left: 20px;
+    //padding-right: 20px;
   }
 
   @media (min-width: $screen-xl) {
@@ -169,5 +168,36 @@ img {
   &--full {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+.main {
+  padding-top: 30px;
+  padding-bottom: 75px;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 70px;
+    padding-bottom: 95px;
+  }
+
+  &__header {
+    margin-bottom: 35px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 50px;
+    }
+
+    &--index {
+      margin-bottom: 70px;
+
+      @media (min-width: $screen-md) {
+        padding-right: 245px;
+      }
+
+      @media (min-width: $screen-xl) {
+        padding-right: 405px;
+        margin-bottom: 65px;
+      }
+    }
   }
 }

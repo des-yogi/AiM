@@ -1,0 +1,30 @@
+.lang-switcher {
+  display: flex;
+  padding-left: 0;
+  margin-right: 20px;
+  list-style-type: none;
+
+  @media (min-width: $screen-xl) {
+    margin-right: 0;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__item {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+
+    a {
+      font-weight: 500;
+      color: $text-muted;
+    }
+
+    &.active {
+
+      a {
+        color: $text-color;
+      }
+    }
+  }
+}

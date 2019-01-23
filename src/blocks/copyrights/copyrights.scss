@@ -1,5 +1,46 @@
 .copyrights {
+  @include col(xs, 12);
 
   $block-name:                &; // #{$block-name}__element
 
+  .col {
+    @include col(xs, 12);
+    @include col(md, 6);
+  }
+
+  &__developer {
+    margin-bottom: 25px;
+    text-align: center;
+    opacity: 0.5;
+
+    img {
+      display: inline-block;
+      vertical-align: top;
+      width: 101px;
+      height: 38px;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+      order: 1;
+      text-align: right;
+    }
+  }
+
+  &__owner {
+    align-self: flex-end;
+    font-size: 12px;
+    font-weight: inherit;
+    opacity: 0.65;
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+      text-align: inherit;
+    }
+  }
 }

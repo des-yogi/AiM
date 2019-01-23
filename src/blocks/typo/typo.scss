@@ -64,6 +64,11 @@ h6 {
   font-weight: 700;
   line-height: 1.17;
   color: $text-color;
+
+  &::selection {
+    color: $white;
+    background: $second-color;
+  }
 }
 
 .h1,
@@ -82,7 +87,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: ($line-height / 2);
+  margin-top: $line-height * 0.9;
   margin-bottom: ($line-height / 2);
 }
 
@@ -155,6 +160,11 @@ figure {
   margin-top: ($line-height / 2);
   margin-bottom: ($line-height / 2);
   color: currentColor;
+
+  &::selection {
+    color: $white;
+    background: $second-color;
+  }
 }
 
 address {
@@ -225,6 +235,11 @@ a {
   &:focus {
     text-decoration: underline;
   }
+
+  &::selection {
+    color: $white;
+    background: $second-color;
+  }
 }
 
 a, b, i, strong, em, small, code {
@@ -233,4 +248,11 @@ a, b, i, strong, em, small, code {
 
 q {
   quotes:  "«" "»";
+}
+
+span {
+  &::selection {
+    color: $white;
+    background: $second-color;
+  }
 }
