@@ -1,0 +1,52 @@
+.features-block {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .col {
+    @include col(xs, 12);
+    @include col(md, 4);
+  }
+
+  &__title {
+    margin-bottom: 35px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__img {
+
+  }
+
+  &__descr {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+
+    @media (min-width: $screen-xl) {
+      margin-top: 25px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.socials {
+
+  $block-name:                &; // #{$block-name}__element
+
+  a {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 8px;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $second-color;
+    }
+
+    @media (min-width: $screen-xl) {
+
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+
+  svg {
+    fill: currentColor;
+  }
+}

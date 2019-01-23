@@ -1,0 +1,64 @@
+.catalog-block {
+    margin-bottom: 45px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 35px;
+    }
+
+  $block-name:                &; // #{$block-name}__element
+
+  .col {
+    @include col(xs, 12);
+    @include col(md, 4);
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__item {
+
+  }
+
+  &__img-wrapper {
+    width: 100%;
+    max-width: 488px;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+
+  }
+
+  &__subtitle {
+    color: currentColor;
+  }
+
+  &__link {
+    display: block;
+    color: $text-color;
+
+    &:hover,
+    &:focus {
+      color: $second-color;
+      text-decoration: none;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 0;
+    color: $text-color;
+  }
+}

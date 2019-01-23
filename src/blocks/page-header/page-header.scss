@@ -1,8 +1,93 @@
-// В этом файле должны быть стили для БЭМ-блока page-header, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .page-header {
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (min-width: $screen-md) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   $block-name:                &; // #{$block-name}__element
+
+  .logo {
+
+    @media (min-width: $screen-md) {
+      margin-right: 45px;
+      transform: translateY(5px);
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-right: 40px;
+      transform: none;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+    //overflow: hidden;
+
+    @media (min-width: $screen-md) {
+      padding-top: 0;
+      align-items: baseline;
+    }
+  }
+
+  &__tel-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin-top: 30px;
+
+    @media (min-width: $screen-md) {
+      width: auto;
+      order: 1;
+      margin-top: 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-left: auto;
+    }
+  }
+
+  &__tel {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $white;
+    background-color: $main-color;
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: -10px;
+      left: 10px;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0);
+      border: 3px solid $main-color;
+
+      @media (min-width: $screen-md) {
+        top: 10px;
+        left: -10px;
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      padding-top: 37px;
+      margin-right: 35px;
+    }
+  }
 }

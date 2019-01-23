@@ -1,11 +1,76 @@
 <!--DEV
-
-Нужно убрать пробел между @-ами:
-
 @ @include('blocks/page-footer/page-footer.html')
-
 -->
 
-<footer class="page-footer" role="contentinfo">
-  page-footer
+<footer class="row  page-footer" role="contentinfo">
+
+  <section class="page-footer__header">
+    <h3 class="visually-hidden">О нашей торговой марке</h3>
+    <a href="/" class="logo  logo--footer" title="AiM - логотип">
+      <img src="img/aim-logo--footer.svg" alt="AiM logo" width="82" height="82">
+    </a>
+    <p class="page-footer__about">Торговая марка АiM — украинское производство высококачественных товаров для единоборств.</p>
+
+    @@include('../socials/socials.html')
+  </section>
+
+  <section class="page-footer__catalog">
+    <h3 class="page-footer__title">Каталог</h3>
+    <ul class="page-footer__list  page-footer__list--catalog">
+      <li class="page-footer__item">
+        <a class="page-footer__link" href="" title="Товар - Название">Мешки</a>
+      </li>
+      <li class="page-footer__item">
+        <a class="page-footer__link" href="" title="Товар - Название">Лапы</a>
+      </li>
+      <li class="page-footer__item">
+        <a class="page-footer__link" href="" title="Товар - Название">Груши</a>
+      </li>
+      <li class="page-footer__item">
+        <a class="page-footer__link" href="" title="Товар - Название">Пады / Макивары</a>
+      </li>
+      <li class="page-footer__item">
+        <a class="page-footer__link" href="" title="Товар - Название">Перчатки</a>
+      </li>
+      <li class="page-footer__item">
+        <a class="page-footer__link" href="" title="Товар - Название">Защита</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="page-footer__contacts">
+    <h3 class="page-footer__title">Контакты</h3>
+
+    <ul class="page-footer__list  page-footer__list--tel">
+      <li class="page-footer__item">
+        <a class="page-footer__link" href="tel:+380674256813" title="Товар - Название">+38 (067)425-68-13</a>
+      </li>
+      <li class="page-footer__item">
+        <a class="page-footer__link" href="tel:+380674256813" title="Товар - Название">+38 (067)425-68-13</a>
+      </li>
+      <li class="page-footer__item">
+        <a class="page-footer__link" href="tel:+380674256813" title="Товар - Название">+38 (067)425-68-13</a>
+      </li>
+    </ul>
+
+    <ul class="page-footer__list  page-footer__list--address">
+      <li class="page-footer__item">
+        <a class="page-footer__link" href="mailto:info@aim.ua" title="info@aim.ua">info@aim.ua</a>
+      </li>
+      <li class="page-footer__item">
+        <span class="page-footer__link" title="Наш адрес">м. Київ, вул. Сім'ї Сосніних 3, 03148</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="copyrights">
+    <h3 class="visually-hidden">Копирайты</h3>
+    <div class="row">
+      <a class="col  copyrights__developer" href="http://it-doors.com" target="_blank" rel="nofollow noopener" title="IT-Doors">
+        <img src="img/itdoors-logo.svg" alt="IT-Doors" width="101" height="38">
+      </a>
+      <span class="col  copyrights__owner">© СПОРТТОВАРЫ «AiM». Все права защищены.</span>
+    </div>
+  </section>
+
 </footer>

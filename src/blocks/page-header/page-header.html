@@ -1,11 +1,58 @@
 <!--DEV
-
-Нужно убрать пробел между @-ами:
-
 @ @include('blocks/page-header/page-header.html')
-
 -->
 
-<header class="page-header" role="banner">
-  page-header
-</header>
+<!-- <div class="container"> -->
+  <header class="container  page-header" role="banner">
+    <div class="page-header__inner">
+
+      <a href="/" class="logo" title="AiM - логотип">
+        <img src="img/aim-logo.svg" alt="AiM logo" width="50" height="21">
+      </a>
+
+      <button id="main-nav-toggler" class="burger"><span></span></button>
+
+      <div class="page-header__tel-wrapper">
+        <a class="page-header__tel" href="tel:+38068309325" title="АиМ контактный тел">+38 (068) 309 325</a>
+
+        <ul class="lang-switcher">
+          <li class="lang-switcher__item  active">
+            <a href="" class="lang-switcher__link" title="Укр.">UA</a>
+          </li>
+          <li class="lang-switcher__item">
+            <a href="" class="lang-switcher__link" title="Рус.">RU</a>
+          </li>
+          <li class="lang-switcher__item">
+            <a href="" class="lang-switcher__link" title="Англ.">EN</a>
+          </li>
+        </ul>
+      </div>
+
+      <nav id="main-nav" class="main-nav" role="navigation">
+        <ul class="main-nav__list">
+          <li class="main-nav__item  active">
+            <a href="index.html" class="main-nav__link">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">
+              Каталог
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="about.html" class="main-nav__link">
+              О компании
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="contacts.html" class="main-nav__link">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+<!-- </div> -->

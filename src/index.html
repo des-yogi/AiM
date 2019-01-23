@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Home page</title>
+  <title>AiM Home page</title>
   <meta name="description" content="">
   @@include('_include/page_head.html')
 </head>
@@ -13,20 +13,143 @@
   <div class="page__inner">
 
     <div class="page__content">
+
       @@include('blocks/page-header/page-header.html')
 
-      <main role="main">
+      <main class="main" role="main">
 
-        <h1>Заголовок</h1>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-          Модальное окно (демо)
-        </button>
+        <div class="container">
+
+          <div class="main__header  main__header--index">
+            <h1>Украинcкий производитель товаров для единоборств</h1>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Встретил алфавит родного обеспечивает подзаголовок города решила ручеек, рыбного переписали по всей гор повстречался, снова своего.</p>
+            <p>Deserunt quibusdam unde voluptates totam blanditiis qui molestiae nesciunt aut a nostrum placeat, aliquid fugit, accusantium fugiat ex enim eos nihil fuga officia laboriosam. Possimus nihil, officia repellat molestias cupiditate quaerat.</p>
+          </div>
+
+          <section class="catalog-block">
+            <h2 class="catalog-block__title">Каталог товаров</h2>
+            <div class="row">
+
+              <div class="col">
+                <article class="catalog-block__item">
+                  <a class="catalog-block__link" href="" title="product title">
+                    <div class="catalog-block__img-wrapper">
+                      <img src="img/tovar-1.jpg" alt="product title" width="387" height="290">
+                    </div>
+                    <div class="catalog-block__text">
+                      <h3 class="catalog-block__subtitle">Груши</h3>
+                      <p class="catalog-block__descr">Груши для единоборств</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+
+              <div class="col">
+                <article class="catalog-block__item">
+                  <a class="catalog-block__link" href="" title="product title">
+                    <div class="catalog-block__img-wrapper">
+                      <img src="img/tovar-2.jpg" alt="product title" width="387" height="290">
+                    </div>
+                    <div class="catalog-block__text">
+                      <h3 class="catalog-block__subtitle">Груши</h3>
+                      <p class="catalog-block__descr">Груши для единоборств</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+
+              <div class="col">
+                <article class="catalog-block__item">
+                  <a class="catalog-block__link" href="" title="product title">
+                    <div class="catalog-block__img-wrapper">
+                      <img src="img/tovar-3.jpg" alt="product title" width="387" height="290">
+                    </div>
+                    <div class="catalog-block__text">
+                      <h3 class="catalog-block__subtitle">Груши</h3>
+                      <p class="catalog-block__descr">Груши для единоборств</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+
+              <div class="col">
+                <article class="catalog-block__item">
+                  <a class="catalog-block__link" href="" title="product title">
+                    <div class="catalog-block__img-wrapper">
+                      <img src="img/tovar-4.jpg" alt="product title" width="387" height="290">
+                    </div>
+                    <div class="catalog-block__text">
+                      <h3 class="catalog-block__subtitle">Груши</h3>
+                      <p class="catalog-block__descr">Груши для единоборств</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+
+              <div class="col">
+                <article class="catalog-block__item">
+                  <a class="catalog-block__link" href="" title="product title">
+                    <div class="catalog-block__img-wrapper">
+                      <img src="img/tovar-1.jpg" alt="product title" width="387" height="290">
+                    </div>
+                    <div class="catalog-block__text">
+                      <h3 class="catalog-block__subtitle">Груши</h3>
+                      <p class="catalog-block__descr">Груши для единоборств</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+
+              <div class="col">
+                <article class="catalog-block__item">
+                  <a class="catalog-block__link" href="" title="product title">
+                    <div class="catalog-block__img-wrapper">
+                      <img src="img/tovar-2.jpg" alt="product title" width="387" height="290">
+                    </div>
+                    <div class="catalog-block__text">
+                      <h3 class="catalog-block__subtitle">Груши</h3>
+                      <p class="catalog-block__descr">Груши для единоборств</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="features-block">
+            <h2 class="features-block__title">Наши преимущества</h2>
+            <ul class="row  features-block__list">
+
+              <li class="col  features-block__item">
+                <div class="features-block__content">
+                  <img class="features-block__img" src="img/self-made-icon.svg" alt="Собственное производство" width="130" height="130">
+                  <p class="h3  features-block__descr">Собственное производство</p>
+                </div>
+              </li>
+              <li class="col  features-block__item">
+                <div class="features-block__content">
+                  <img class="features-block__img" src="img/quality-icon.svg" alt="Высококачественный материал">
+                  <p class="h3  features-block__descr">Высококачественный материал</p>
+                </div>
+              </li>
+              <li class="col  features-block__item">
+                <div class="features-block__content">
+                  <img class="features-block__img" src="img/store-icon.svg" alt="Складская программа">
+                  <p class="h3  features-block__descr">Складская программа</p>
+                </div>
+              </li>
+
+            </ul>
+          </section>
+
+        </div>
 
       </main>
 
     </div>
 
-    <div class="page__footer-wrapper">
+    <div class="container  footer-wrapper">
       @@include('blocks/page-footer/page-footer.html')
     </div>
 
@@ -34,6 +157,5 @@
 
   @@include('_include/page_bottom.html')
 
-  @@include('blocks/modal/modal.html')
 </body>
 </html>
