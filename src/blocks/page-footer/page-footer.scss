@@ -92,9 +92,10 @@
       a,
       span {
         font-size: 15px;
+        font-weight: 500;
 
         @media (min-width: $screen-xl) {
-          font-size: inherit;
+          font-size: 18px;
         }
       }
 
@@ -111,6 +112,11 @@
         &:nth-child(odd) {
           margin-right: 20px;
         }
+
+        &.active > a {
+          text-decoration: underline;
+          pointer-events: none;
+        }
       }
     }
 
@@ -122,10 +128,20 @@
         @media (min-width: $screen-md) {
           margin-right: 20px;
         }
+
+        @media (min-width: $screen-xl) {
+          width: calc(50% - 10px);
+        }
+
+        &:nth-child(even) {
+          @media (min-width: $screen-xl) {
+            margin-right: 0;
+          }
+        }
       }
 
       @media (min-width: $screen-md) {
-        width: calc(40% - 10px);
+        width: calc(45% - 10px);
       }
 
       @media (min-width: $screen-xl) {
@@ -140,7 +156,7 @@
       }
 
       @media (min-width: $screen-md) {
-        width: calc(60% - 10px);
+        width: calc(55% - 10px);
       }
 
       @media (min-width: $screen-xl) {

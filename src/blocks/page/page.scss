@@ -175,6 +175,10 @@ img {
   padding-top: 30px;
   padding-bottom: 75px;
 
+  @media (min-width: $screen-md) {
+    padding-top: 50px;
+  }
+
   @media (min-width: $screen-xl) {
     padding-top: 70px;
     padding-bottom: 95px;
@@ -199,5 +203,16 @@ img {
         margin-bottom: 65px;
       }
     }
+  }
+
+  &--noindex {
+
+    @media (min-width: $screen-md) {
+      padding-top: 35px;
+    }
+
+    /* @media (min-width: $screen-xl) {
+      padding-top: 35px;
+    } */
   }
 }

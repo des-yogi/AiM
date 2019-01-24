@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>AiM Товар</title>
+  <title>AiM Страница товара</title>
   <meta name="description" content="">
   @@include('_include/page_head.html')
 </head>
@@ -15,14 +15,155 @@
     <div class="page__content">
       @@include('blocks/page-header/page-header.html')
 
-      <main role="main">
+      <main class="main  main--noindex" role="main">
 
+        <div class="container">
+          <div>
+            @@include('blocks/breadcrumbs/breadcrumbs.html')
+          </div>
+        </div>
+
+        <article class="product">
+
+          <div class="container  container--bg">
+            <div class="row  product__showcase">
+
+              <div class="product__col-slider  swiper-container">
+
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide  product__slide" data-hash="slide1">
+                    <div class="swiper-zoom-container">
+                      <img src="img/tovar-1.jpg" alt="Картинка товара" width="800" height="600">
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide  product__slide" data-hash="slide2">
+                    <div class="swiper-zoom-container">
+                      <img src="img/tovar-2.jpg" alt="Картинка товара" width="800" height="600">
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide  product__slide" data-hash="slide3">
+                    <div class="swiper-zoom-container">
+                      <img src="img/tovar-3.jpg" alt="Картинка товара" width="800" height="600">
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide  product__slide" data-hash="slide3">
+                    <div class="swiper-zoom-container">
+                      <img src="img/tovar-2.jpg" alt="Картинка товара" width="800" height="600">
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="product__controls-wrapper" aria-label="Кнопки управления просмотром слайдера">
+                  <div class="swiper-button-prev  product__button-prev"></div>
+                  <div class="swiper-pagination  product__pagination"></div>
+                  <div class="swiper-button-next  product__button-next"></div>
+                </div>
+
+              </div>
+
+              <div class="product__col-info">
+                <div class="product__info">
+                  <div class="product__code">
+                    <span>Артикул:</span>&nbsp;<span class="product__number">2442 4214 5255</span>
+                  </div>
+                  <h1>Мешок БОКС "ELIT" кольцевой</h1>
+                  <div class="product__info-text">
+                    <p>Груша сделана из натуральной кожи, благодаря чему отличается выносливостью и большим сроком службы.</p>
+                    <p>Внутри находится латексная камера, заполненная <strong>свежим (!)</strong> воздухом.</p>
+                  </div>
+                  <div class="product__colors">
+                    <span>Цвет:</span>
+                    <div class="product__colors-wrapper">
+                      <span class="product__color  active">
+                        <a class="product__color-link" href="" title="Выбраный цвет"></a>
+                      </span>
+                      <span class="product__color">
+                        <a class="product__color-link" href="" title="Выбраный цвет"></a>
+                      </span>
+                      <span class="product__color">
+                        <a class="product__color-link" href="" title="Выбраный цвет"></a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="container">
+            <section class="product__specifications">
+              <h2>Характеристики</h2>
+
+              <dl class="row  product__specifications-list">
+                <div class="product__group  product__group--size">
+                  <dt class="h4">Размер:</dt>
+                  <dd>
+                    <ul>
+                      <li>70х24 см</li>
+                      <li>100х36 см</li>
+                      <li>120х36 см</li>
+                    </ul>
+                  </dd>
+                </div>
+                <div class="product__group  product__group--weight">
+                  <dt class="h4">Вес:</dt>
+                  <dd>
+                    <ul>
+                      <li>10 кг</li>
+                      <li>20 кг</li>
+                      <li>30 кг</li>
+                    </ul>
+                  </dd>
+                </div>
+                <div class="product__group">
+                  <dt class="h4">Наполнитель:</dt>
+                  <dd>пвх кирза, кожа, эко-кожа</dd>
+                </div>
+                <div class="product__group">
+                  <dt class="h4">Материал:</dt>
+                  <dd>ПВХ (Бельгия) 630 г/м2</dd>
+                </div>
+              </dl>
+
+              <div class="product__add-info">
+                <h3>Особенности изделия</h3>
+                <ul>
+                  <li>Средняя жесткость – наиболее подходящая для отработки силовых ударов. Подходит как любителям, так и профессионалам (жесткие мешки (тырса, песок) приводят к травмам суставов, мягкие мешки – к вывихам кистей).</li>
+
+                  <li>Сбалансированность веса благодаря равномерной набивке. Все набивочные материалы  имеют крупную фракцию, что исключает возможность смещения центра тяжести, а так же смешивания или осыпания материалов (резиновая крошка).</li>
+
+                  <li>Минимальный процент осадки материалов за счет жесткой полиуретановой ленты, которая  «выдавливает» мешок во всех направлениях. Боксерский мешок нашего производства не сбивается (ветошь) даже при самых интенсивных нагрузках, соответственно перенабивка не требуется.</li>
+
+                  <li>Набивочные материалы наших мешков не стареют, не гниют, не пылят, в них не заводятся паразиты.</li>
+                </ul>
+
+                <h3>Вывод:</h3>
+                <p>Мешки «AIM» максимально безопасны и прослужат в разы дольше чем мешки с обычной набивкой (тырса, опилки, песок, ветошь, смесь резиновой и поролоновой крошки).</p>
+              </div>
+
+            </section>
+
+            <section class="product__contacts">
+              <h4>Связаться с нами</h4>
+              <a href="tel:+380674256813">Киевстар: +38 (067) 425-68-13</a>
+              <a href="tel:+380663501643">Vodafone: +38 (066) 350-16-43</a>
+            </section>
+
+          </div>
+
+        </article>
 
       </main>
 
     </div>
 
-    <div class="page__footer-wrapper">
+    <div class="container  footer-wrapper">
       @@include('blocks/page-footer/page-footer.html')
     </div>
 

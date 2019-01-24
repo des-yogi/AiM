@@ -15,14 +15,96 @@
     <div class="page__content">
       @@include('blocks/page-header/page-header.html')
 
-      <main role="main">
+      <main class="main" role="main">
 
+        <div class="container">
+
+          <div>
+            @@include('blocks/breadcrumbs/breadcrumbs.html')
+          </div>
+
+          <div class="main__header  main__header--index">
+            <h1>Мешки</h1>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Встретил алфавит родного обеспечивает подзаголовок города решила ручеек, рыбного переписали по всей гор повстречался, снова своего.</p>
+          </div>
+
+          <section class="catalog-block">
+            <h2 class="visually-hidden">Категория товара: Мешки</h2>
+            <div class="row">
+
+              <div class="col">
+                <article class="catalog-block__item">
+                  <a class="catalog-block__link" href="" title="product title">
+                    <div class="catalog-block__img-wrapper">
+                      <img src="img/tovar-1.jpg" alt="product title" width="387" height="290">
+                    </div>
+                    <div class="catalog-block__text">
+                      <h3 class="catalog-block__subtitle">Мешок</h3>
+                      <p class="catalog-block__descr">Мешок красный, мягкий :)</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+
+              <div class="col">
+                <article class="catalog-block__item">
+                  <a class="catalog-block__link" href="" title="product title">
+                    <div class="catalog-block__img-wrapper">
+                      <img src="img/tovar-1.jpg" alt="product title" width="387" height="290">
+                    </div>
+                    <div class="catalog-block__text">
+                      <h3 class="catalog-block__subtitle">Мешок</h3>
+                      <p class="catalog-block__descr">Мешок красный, полумягкий :)</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+
+              <div class="col">
+                <article class="catalog-block__item">
+                  <a class="catalog-block__link" href="" title="product title">
+                    <div class="catalog-block__img-wrapper">
+                      <img src="img/tovar-1.jpg" alt="product title" width="387" height="290">
+                    </div>
+                    <div class="catalog-block__text">
+                      <h3 class="catalog-block__subtitle">Мешок</h3>
+                      <p class="catalog-block__descr">Мешок красный, средний :)</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+
+              <div class="col">
+                <article class="catalog-block__item">
+                  <a class="catalog-block__link" href="" title="product title">
+                    <div class="catalog-block__img-wrapper">
+                      <img src="img/tovar-1.jpg" alt="product title" width="387" height="290">
+                    </div>
+                    <div class="catalog-block__text">
+                      <h3 class="catalog-block__subtitle">Мешок</h3>
+                      <p class="catalog-block__descr">Мешок красный, твердый :)</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="features-block">
+            <h2 class="features-block__title  visually-hidden">Наши преимущества</h2>
+            <div class="features-block__text">
+              <p>В мешке «AIM» присутствует компенсирующий поглощающий слой (войлок), благодаря которому нагрузка приходится не только на площадь нанесения удара, а распределяется по мешку, к тому же мешок выглядит более ровным и внешне привлекательным.</p>
+            </div>
+          </section>
+
+        </div>
 
       </main>
 
     </div>
 
-    <div class="page__footer-wrapper">
+    <div class="container  footer-wrapper">
       @@include('blocks/page-footer/page-footer.html')
     </div>
 
