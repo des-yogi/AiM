@@ -173,10 +173,6 @@
     }
   }
 
-  &__number {
-
-  }
-
   &__info-text {
     padding-bottom: 25px;
 
@@ -193,13 +189,14 @@
     position: relative;
     display: flex;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: center;
     padding-top: 15px;
 
     & > span {
       margin-right: 30px;
       font-size: 20px;
       font-weight: 700;
+      transform: translateY(-2px);
     }
 
     &::before {
@@ -227,44 +224,32 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   }
 
   &__color {
-    position: relative;
     margin-right: 20px;
     margin-bottom: 15px;
 
-    &:hover,
-    &:focus {
-
-      &::before {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        content: "";
-        display: block;
-        width: 18px;
-        height: 18px;
-        background-color: $black;
-        border-top: 4px solid $white;
-        border-left: 4px solid $white;
-      }
-    }
-
     &.active {
 
-      &::before {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        content: "";
-        display: block;
-        width: 18px;
-        height: 18px;
-        background-color: $black;
-        border-top: 4px solid $white;
-        border-left: 4px solid $white;
+      a {
+        &::before {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          content: "";
+          display: block;
+          width: 18px;
+          height: 18px;
+          background-color: $black;
+          border-top: 4px solid $white;
+          border-left: 4px solid $white;
+          transition: all 0.3s ease-out;
+        }
       }
     }
 
@@ -274,18 +259,67 @@
   }
 
   &__color-link {
+    @include text-hide;
+    position: relative;
     display: block;
     width: 40px;
     height: 40px;
-    background-color: red;
+    color: red;
+    background-color: currentColor;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      content: "";
+      display: block;
+      width: 18px;
+      height: 18px;
+      background-color: currentColor;
+      border-top: 4px solid currentColor;
+      border-left: 4px solid currentColor;
+      transition: all 0.3s ease-out;
+    }
+
+    &:hover,
+    &:focus {
+
+      &::before {
+        background-color: $black;
+        border-color: $white;
+      }
+    }
   }
 
   &__specifications {
     padding-top: 40px;
+    margin-bottom: 40px;
+
+    h2 {
+      margin-bottom: 25px;
+
+      @media (min-width: $screen-md) {
+        margin-bottom: 30px;
+      }
+
+      @media (min-width: $screen-xl) {
+        margin-bottom: 40px;
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      padding-top: 45px;
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-top: 50px;
+      margin-bottom: 80px;
+    }
   }
 
   &__specifications-list {
-
+    margin: 0;
   }
 
   &__group {
@@ -340,15 +374,24 @@
         font-size: 20px;
       }
     }
-
-    &--size {
-    }
-
-    &--weight {
-    }
   }
 
   &__add-info {
+
+    h3 {
+
+      &:last-of-type {
+        margin-top: 35px;
+
+        @media (min-width: $screen-md) {
+          margin-top: 45px;
+        }
+
+        @media (min-width: $screen-xl) {
+          margin-top: 65px;
+        }
+      }
+    }
 
     li + li {
       margin-top: 0.75em;
@@ -357,12 +400,35 @@
 
   &__contacts {
 
-  }
-}
+    h3 {
+      margin-bottom: 20px;
 
-.swiper-button-prev {
-}
-.swiper-pagination {
-}
-.swiper-button-next {
+      @media (min-width: $screen-md) {
+        margin-bottom: 25px;
+      }
+    }
+
+    a {
+      display: inline-block;
+      vertical-align: baseline;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      &:first-of-type {
+        margin-right: 40px;
+
+        @media (min-width: $screen-md) {
+          margin-right: 90px;
+        }
+      }
+    }
+
+    a + a {
+      margin-top: 15px;
+
+      @media (min-width: $screen-md) {
+        margin-top: 0;
+      }
+    }
+  }
 }

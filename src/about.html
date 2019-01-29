@@ -15,14 +15,45 @@
     <div class="page__content">
       @@include('blocks/page-header/page-header.html')
 
-      <main role="main">
+      <main class="main  main--noindex  main--dark" role="main">
+
+        <div class="container">
+
+          <div>
+            <ul class="breadcrumbs  breadcrumbs--ondark">
+              <li class="breadcrumbs__item">
+                <a href="" class="breadcrumbs__link">Главная</a>
+              </li>
+              <li class="breadcrumbs__item  active">
+                <a href="" class="breadcrumbs__link" aria-current="page">Каталог</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="" class="breadcrumbs__link">Мешок</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="row  about">
+
+            <div class="main__header  main__header--index  main__header--ondark">
+              <h1>О Компании</h1>
+              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Встретил алфавит родного обеспечивает подзаголовок города решила ручеек, рыбного переписали по всей гор повстречался, снова своего.</p>
+            </div>
+
+            <div class="about__img-col">
+              <img src="img/about-img.jpg" alt="О нас" title="О нас" width="480" height="360">
+            </div>
+
+          </div>
+
+        </div>
 
 
       </main>
 
     </div>
 
-    <div class="page__footer-wrapper">
+    <div class="container  footer-wrapper">
       @@include('blocks/page-footer/page-footer.html')
     </div>
 

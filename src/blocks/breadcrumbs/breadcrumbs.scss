@@ -43,5 +43,25 @@
       text-decoration: none;
     }
   }
-}
 
+  &--ondark {
+
+    #{$block-name}__item {
+
+      &.active {
+
+        #{$block-name}__link {
+          color: $white;
+        }
+      }
+    }
+
+    #{$block-name}__link {
+
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+    }
+  }
+}

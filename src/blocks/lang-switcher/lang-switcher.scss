@@ -23,11 +23,9 @@
       &:focus {
         color: $text-color;
       }
-    }
 
-    &.active {
+      &.active {
 
-      a {
         color: $text-color;
         pointer-events: none;
       }
