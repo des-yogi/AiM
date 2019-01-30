@@ -28,11 +28,17 @@
     &:hover,
     &:focus {
       opacity: 1;
+      border-color: $text-color;
     }
   }
 
   .swiper-pagination-bullet-active {
     opacity: 1;
+    border-color: $text-color;
+
+    &::before {
+      background-color: $second-color;
+    }
   }
 
   .container--bg {
@@ -114,16 +120,29 @@
     flex: 1 1;
 
     span {
-      width: 40px;
-      height: 30px;
+      position: relative;
+      width: 24px;
+      height: 24px;
       margin: 0 5px;
       border-radius: 0;
       overflow: hidden;
-      background-color: rgba(0, 0, 0, 0.4);
-      background-image: url(../img/tovar-1.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
+      background-color: $white;
+      border: 2px solid $text-muted;
+      // background-image: url(../img/tovar-1.jpg);
+      // background-size: cover;
+      // background-repeat: no-repeat;
+      // background-position: center;
+
+      &::before {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        content: "";
+        display: block;
+        width: 12px;
+        height: 12px;
+        background-color: $text-muted;
+      }
     }
   }
 
