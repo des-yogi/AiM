@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Страница 404</title>
+  <title>О нас</title>
   <meta name="description" content="">
   @@include('_include/page_head.html')
 </head>
@@ -15,14 +15,30 @@
     <div class="page__content">
       @@include('blocks/page-header/page-header.html')
 
-      <main role="main">
+      <main class="main  main--404" role="main">
+        <div class="container">
 
+          <article class="row  page-404">
 
+            <div class="page-404__header">
+              <h1 class="h2">Страница не найдена или не существует…</h1>
+              <p>
+                <a class="page-404__link" href="index.html" title="Вернуться на главную" rel="home">Вернуться на главную</a>
+              </p>
+            </div>
+
+            <div class="page-404__number">
+              <img src="img/404.svg" alt="Страница 404" width="280" height="123">
+            </div>
+
+          </article>
+
+        </div>
       </main>
 
     </div>
 
-    <div class="page__footer-wrapper">
+    <div class="container  footer-wrapper">
       @@include('blocks/page-footer/page-footer.html')
     </div>
 

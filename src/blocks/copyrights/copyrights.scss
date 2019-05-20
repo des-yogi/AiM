@@ -11,18 +11,12 @@
   &__developer {
     margin-bottom: 25px;
     text-align: center;
-    opacity: 0.5;
 
     img {
       display: inline-block;
       vertical-align: top;
       width: 101px;
       height: 38px;
-    }
-
-    &:hover,
-    &:focus {
-      opacity: 1;
     }
 
     @media (min-width: $screen-md) {
@@ -41,6 +35,17 @@
 
     @media (min-width: $screen-md) {
       text-align: inherit;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.5;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
     }
   }
 }

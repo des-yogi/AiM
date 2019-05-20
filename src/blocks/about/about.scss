@@ -2,4 +2,20 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  &__img-col {
+    display: flex;
+    align-items: flex-end;
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xl, 6);
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: right bottom;
+    }
+  }
 }

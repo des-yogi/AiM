@@ -2,4 +2,63 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  h1 {
+    text-transform: uppercase;
+    line-height: 1.5;
+    color: $white;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__header {
+    @include col(xs, 12);
+    //@include col-offset(md, 1);
+    @include col(md, 5);
+    margin-bottom: 25px;
+  }
+
+  &__number {
+    @include col(xs, 12);
+    @include col-offset(md, 1);
+    @include col(md, 5);
+    @include col-offset(xl, 0);
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      filter: drop-shadow(27px -7px 16px $gray-darkest);
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 10px 45px;
+    font-size: 18px;
+    text-align: center;
+    text-transform: none;
+    color: $white;
+    background-color: $main-color;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $second-color;
+      text-decoration: none;
+    }
+
+    @media (min-width: $screen-md) {
+      width: auto;
+    }
+  }
 }

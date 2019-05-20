@@ -5,7 +5,7 @@
 .page-footer {
   padding-top: 40px;
   padding-bottom: 20px;
-  color: $white;
+  color: $text-color;
 
   $block-name:                &; // #{$block-name}__element
 
@@ -92,9 +92,10 @@
       a,
       span {
         font-size: 15px;
+        font-weight: 500;
 
         @media (min-width: $screen-xl) {
-          font-size: inherit;
+          font-size: 18px;
         }
       }
 
@@ -111,6 +112,11 @@
         &:nth-child(odd) {
           margin-right: 20px;
         }
+
+        &.active > a {
+          text-decoration: underline;
+          pointer-events: none;
+        }
       }
     }
 
@@ -122,10 +128,14 @@
         @media (min-width: $screen-md) {
           margin-right: 20px;
         }
+
+        @media (min-width: $screen-xl) {
+          width: 100%;
+        }
       }
 
       @media (min-width: $screen-md) {
-        width: calc(40% - 10px);
+        width: calc(65% - 10px);
       }
 
       @media (min-width: $screen-xl) {
@@ -140,21 +150,13 @@
       }
 
       @media (min-width: $screen-md) {
-        width: calc(60% - 10px);
+        width: calc(35% - 10px);
       }
 
       @media (min-width: $screen-xl) {
         width: 100%;
       }
     }
-  }
-
-  &__item {
-
-  }
-
-  &__link {
-
   }
 
   &__contacts {

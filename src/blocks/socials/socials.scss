@@ -22,6 +22,17 @@
   }
 
   svg {
+    display: block;
     fill: currentColor;
+  }
+
+  &--message {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 10px;
+
+    @media (min-width: $screen-xl) {
+      margin-left: 20px;
+    }
   }
 }

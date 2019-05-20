@@ -15,14 +15,51 @@
     <div class="page__content">
       @@include('blocks/page-header/page-header.html')
 
-      <main role="main">
+      <main class="main  main--noindex  main--dark" role="main">
+
+        <div class="container">
+
+          <div>
+            <ul class="breadcrumbs  breadcrumbs--ondark">
+              <li class="breadcrumbs__item">
+                <a href="" class="breadcrumbs__link">Главная</a>
+              </li>
+              <li class="breadcrumbs__item  active">
+                <a href="" class="breadcrumbs__link" aria-current="page">Каталог</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="" class="breadcrumbs__link">Мешок</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="row  about">
+
+            <div class="main__header  main__header--index  main__header--ondark">
+              <h1>О Компании</h1>
+              <p>Ми виробляємо продукцію для єдиноборств керуючись непереборним бажанням підіймати якість до світового рівня і в нас це виходить.</p>
+
+              <p>Наш перший власний продукт – мішки. Декілька років тому командою "AiM" ми поставили собі за мету виробити боксерський мішок з ідеальною пропорцією якості, вартості та практичності. Кожна нова модель перевіряється незалежними професійними спортсменами та тренерами понад 20 разів. Ми піклуємось про все: унікальність, набивний матеріал, оббивка, сучасний дизайн, ідеальний розмір. Саме тому впевнені, що наша продукція максимально надійна та служить довше.</p>
+
+              <p>Тепер наша мета - це взяття на себе забезпечення спортсменів унікальною продукцію виключної якості, якій вони зможуть довіряти аби максимально концентруватися на найважливіших цілях.</p>
+
+              <p>Дякуємо Вам за довіру у використанні нашої продукції. Головне, пам'ятайте: "Ціль завжди в пріоритеті!"</p>
+            </div>
+
+            <div class="about__img-col">
+              <img src="img/about-img.jpg" alt="О нас" title="О нас" width="480" height="360">
+            </div>
+
+          </div>
+
+        </div>
 
 
       </main>
 
     </div>
 
-    <div class="page__footer-wrapper">
+    <div class="container  footer-wrapper">
       @@include('blocks/page-footer/page-footer.html')
     </div>
 

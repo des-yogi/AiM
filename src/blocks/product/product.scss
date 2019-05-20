@@ -1,0 +1,453 @@
+.product {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .swiper-zoom-container {
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      //height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .swiper-wrapper {
+    height: calc(100% - 80px);
+  }
+
+  .swiper-button-disabled {
+    background-color: $block-bg;
+  }
+
+  .swiper-pagination-bullet {
+    opacity: 0.5;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      border-color: $text-color;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    border-color: $text-color;
+
+    &::before {
+      background-color: $second-color;
+    }
+  }
+
+  .container--bg {
+    @media (min-width: $screen-xl) {
+      background: $block-bg;
+      background: linear-gradient(to right, $white, $white 50%, $block-bg 50%);
+    }
+  }
+
+  &__showcase {
+
+    @media (min-width: $screen-md) {
+      margin-left: 0;
+      background-color: $block-bg;
+    }
+  }
+
+  &__col-slider {
+    @include col(xs, 12);
+    @include col-offset(md, 1);
+    @include col(md, 5);
+    background-color: $white;
+  }
+
+  &__slide {
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__controls-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    margin-top: 20px;
+  }
+
+  &__button-prev,
+  &__button-next,
+  &__pagination {
+    position: static;
+    height: 60px;
+  }
+
+  &__button-prev,
+  &__button-next {
+    width: 30px;
+    margin-top: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='20' viewBox='0 0 10 20'%3E%3Cpath fill='%23030303' d='M10 10L3 20H0l7-10L0 0h3z'/%3E%3C/svg%3E");
+    background-size: 10px 20px;
+    transition: 0.3s all ease-out;
+
+    &:hover,
+    &:focus {
+      background-color: $second-color;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='20' viewBox='0 0 10 20'%3E%3Cpath fill='%23ffffff' d='M10 10L3 20H0l7-10L0 0h3z'/%3E%3C/svg%3E");
+    }
+  }
+
+  &__button-prev {
+    transform: scale(-1, 1);
+  }
+
+  &__button-next {
+
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
+
+    span {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      margin: 0 5px;
+      border-radius: 0;
+      overflow: hidden;
+      background-color: $white;
+      border: 2px solid $text-muted;
+      // background-image: url(../img/tovar-1.jpg);
+      // background-size: cover;
+      // background-repeat: no-repeat;
+      // background-position: center;
+
+      &::before {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        content: "";
+        display: block;
+        width: 12px;
+        height: 12px;
+        background-color: $text-muted;
+      }
+    }
+  }
+
+  &__col-info {
+    position: relative;
+    @include col(xs, 12);
+    @include col(md, 6);
+    background-color: $block-bg;
+
+    &::before,
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: -10px;
+      right: -10px;
+      content: "";
+      display: block;
+      background-color: $block-bg;
+    }
+  }
+
+  &__info {
+    padding-top: 25px;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100%;
+      padding-left: 50px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-left: 70px;
+    }
+  }
+
+  &__code {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: $text-muted;
+
+    & > span {
+      font-weight: 700;
+    }
+  }
+
+  &__info-text {
+    padding-bottom: 25px;
+
+    p {
+      margin: 0;
+    }
+
+    p + p {
+      margin-top: 10px;
+    }
+  }
+
+  &__colors {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 15px;
+
+    & > span {
+      margin-right: 30px;
+      font-size: 20px;
+      font-weight: 700;
+      transform: translateY(-2px);
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -20px;
+      right: -20px;
+      content: "";
+      display: block;
+      height: 2px;
+      background-color: $white;
+    }
+
+    @media (min-width: $screen-md) {
+      margin-top: auto;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-top: 25px;
+    }
+  }
+
+  &__colors-wrapper {
+    flex: 1 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__color {
+    margin-right: 20px;
+    margin-bottom: 15px;
+
+    &.active {
+
+      a {
+        &::before {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          content: "";
+          display: block;
+          width: 18px;
+          height: 18px;
+          background-color: $black;
+          border-top: 4px solid $white;
+          border-left: 4px solid $white;
+          transition: all 0.3s ease-out;
+        }
+      }
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__color-link {
+    @include text-hide;
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: red;
+    background-color: currentColor;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      content: "";
+      display: block;
+      width: 18px;
+      height: 18px;
+      background-color: currentColor;
+      border-top: 4px solid currentColor;
+      border-left: 4px solid currentColor;
+      transition: all 0.3s ease-out;
+    }
+
+    &:hover,
+    &:focus {
+
+      &::before {
+        background-color: $black;
+        border-color: $white;
+      }
+    }
+  }
+
+  &__specifications {
+    padding-top: 40px;
+    margin-bottom: 40px;
+
+    h2 {
+      margin-bottom: 25px;
+
+      @media (min-width: $screen-md) {
+        margin-bottom: 30px;
+      }
+
+      @media (min-width: $screen-xl) {
+        margin-bottom: 40px;
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      padding-top: 45px;
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-top: 50px;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__specifications-list {
+    margin: 0;
+  }
+
+  &__group {
+    @include col(xs, 12);
+    @include col(md, 6);
+    margin-bottom: 25px;
+
+    dt {
+      margin-top: 0;
+
+      @media (min-width: $screen-md) {
+        width: calc(35% - 10px);
+        margin-right: 20px;
+      }
+    }
+
+    dd {
+      margin-left: 0;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+
+      li + li {
+        margin-top: 10px;
+      }
+
+      @media (min-width: $screen-md) {
+        width: calc(65% - 10px);
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &--size,
+    &--weight {
+      @include col(xs, 6);
+
+      dt {
+
+        @media (min-width: $screen-md) {
+
+        }
+      }
+
+      dd {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__add-info {
+
+    h3 {
+
+      &:last-of-type {
+        margin-top: 35px;
+
+        @media (min-width: $screen-md) {
+          margin-top: 45px;
+        }
+
+        @media (min-width: $screen-xl) {
+          margin-top: 65px;
+        }
+      }
+    }
+
+    li + li {
+      margin-top: 0.75em;
+    }
+  }
+
+  &__contacts {
+
+    h3 {
+      margin-bottom: 20px;
+
+      @media (min-width: $screen-md) {
+        margin-bottom: 25px;
+      }
+    }
+
+    a {
+      display: inline-block;
+      vertical-align: baseline;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      &:first-of-type {
+        margin-right: 40px;
+
+        @media (min-width: $screen-md) {
+          margin-right: 90px;
+        }
+      }
+    }
+
+    a + a {
+      margin-top: 15px;
+
+      @media (min-width: $screen-md) {
+        margin-top: 0;
+      }
+    }
+  }
+}

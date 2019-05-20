@@ -2,4 +2,130 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  p + p {
+    margin-top: ($line-height / 2);
+  }
+
+  a,
+  p {
+    //font-size: 16px;
+    font-weight: 500;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  li {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__row-main {
+    margin-left: -20px;
+    margin-right: -20px;
+
+    @media (min-width: $screen-md) {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+  }
+
+  &__data {
+    @include col(xs, 12);
+    @include col(md, 6);
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: $screen-md) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &__map {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col-offset(xl, 1);
+    @include col(xl, 5);
+    padding: 0;
+    background-color: $text-muted;
+
+    @media (min-width: $screen-md) {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  &__phones,
+  &__address,
+  &__email,
+  &__social {
+    margin-bottom: 35px;
+  }
+
+  &__phones {
+    @include col(xs, 12);
+    @include col(md, 8);
+    @include col(xl, 6);
+  }
+
+  &__address {
+    @include col(xs, 12);
+    @include col(md, 8);
+    @include col(xl, 6);
+
+    @media (min-width: $screen-md) {
+      order: 2;
+    }
+
+    @media (min-width: $screen-xl) {
+      order: 1;
+    }
+  }
+
+  &__email {
+    @include col(xs, 12);
+    @include col(md, 8);
+    @include col(xl, 6);
+
+    @media (min-width: $screen-md) {
+      order: 3;
+    }
+  }
+
+  &__social {
+    @include col(xs, 12);
+    @include col(md, 4);
+    @include col(xl, 6);
+
+    a:first-of-type {
+      padding-left: 0;
+    }
+
+    @media (min-width: $screen-md) {
+      order: 1;
+    }
+
+    @media (min-width: $screen-xl) {
+      order: 3;
+    }
+  }
 }

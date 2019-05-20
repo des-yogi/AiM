@@ -18,12 +18,16 @@
     a {
       font-weight: 500;
       color: $text-muted;
-    }
 
-    &.active {
-
-      a {
+      &:hover,
+      &:focus {
         color: $text-color;
+      }
+
+      &.active {
+
+        color: $text-color;
+        pointer-events: none;
       }
     }
   }

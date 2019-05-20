@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Контакты</title>
+  <title>AiM Категория товара</title>
   <meta name="description" content="">
   @@include('_include/page_head.html')
 </head>
@@ -15,14 +15,77 @@
     <div class="page__content">
       @@include('blocks/page-header/page-header.html')
 
-      <main role="main">
+      <main class="main" role="main">
 
+        <div class="container">
+          <div>
+            @@include('blocks/breadcrumbs/breadcrumbs.html')
+          </div>
+        </div>
+
+        <article class="container  contacts">
+
+          <div class="main__header">
+            <h1>Контакты</h1>
+          </div>
+
+          <div class="row  contacts__row-main">
+
+            <section class="contacts__data">
+              <h2 class="visually-hidden">Контактные данные и адрес нашей компании</h2>
+
+              <div class="row  contacts__content">
+                <div class="contacts__phones">
+                  <h3>Телефоны:</h3>
+                  <ul>
+                    <li>
+                      <a class="contacts__link" href="tel:+380674256813" title="Телефон">+38 (067) 425-68-13</a>
+                    </li>
+                    <li>
+                      <a class="contacts__link" href="tel:+380674256813" title="Телефон">+38 (067) 425-68-13</a>
+                    </li>
+                    <li>
+                      <a class="contacts__link" href="tel:+380674256813" title="Телефон">+38 (067) 425-68-13</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="contacts__address">
+                  <h3>Адрес:</h3>
+                  <p>м. Київ, вул. Сім'ї Сосніних 3, 03148</p>
+                </div>
+
+                <div class="contacts__email">
+                  <h3>Почта:</h3>
+                  <a class="contacts__link" href="mailto:info@gmail.com" title="Наша почта">info@gmail.com</a>
+                </div>
+
+                <div class="contacts__social">
+                  @@include('blocks/socials/socials.html')
+                </div>
+
+              </div>
+
+            </section>
+
+            <section class="contacts__map">
+              <h2 class="visually-hidden">Карта с координатами нашего офиса</h2>
+
+              <div id="map" class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.6052639616196!2d30.396870016070334!3d50.42982577947249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cbf4e27d9079%3A0x87ef3e76a6ce769c!2z0YPQuy4g0KHQtdC80YzQuCDQodC-0YHQvdC40L3Ri9GFLCAzLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1548425955146" style="border:0;width:100%;height:100%;" allowfullscreen></iframe>
+              </div>
+
+            </section>
+
+          </div>
+
+        </article>
 
       </main>
 
     </div>
 
-    <div class="page__footer-wrapper">
+    <div class="container  footer-wrapper">
       @@include('blocks/page-footer/page-footer.html')
     </div>
 

@@ -24,7 +24,9 @@
     "map": [],
     "copyrights": [],
     "socials": [],
-    "lang-switcher": []
+    "lang-switcher": [],
+    "breadcrumbs": [],
+    "product": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
