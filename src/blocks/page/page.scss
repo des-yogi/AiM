@@ -195,11 +195,11 @@ img {
       margin-bottom: 70px;
 
       @media (min-width: $screen-md) {
-        padding-right: 245px;
+        //padding-right: 245px;
       }
 
       @media (min-width: $screen-xl) {
-        padding-right: 405px;
+        //padding-right: 405px;
         margin-bottom: 65px;
       }
     }
@@ -216,12 +216,24 @@ img {
     }
   }
 
-  /* &--noindex {
+  &__col-text,
+  &__col-img {
+    @include col(xs, 12);
+  }
 
-    @media (min-width: $screen-md) {
-      padding-top: 35px;
+  &__col-text {
+    @include col(md, 8);
+  }
+
+  &__col-img {
+    @include col(md, 4);
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 417px;
     }
-  } */
+  }
 
   &--dark {
     padding-top: 35px !important;

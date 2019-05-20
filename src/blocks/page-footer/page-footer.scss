@@ -5,7 +5,7 @@
 .page-footer {
   padding-top: 40px;
   padding-bottom: 20px;
-  color: $white;
+  color: $text-color;
 
   $block-name:                &; // #{$block-name}__element
 
@@ -130,18 +130,12 @@
         }
 
         @media (min-width: $screen-xl) {
-          width: calc(50% - 10px);
-        }
-
-        &:nth-child(even) {
-          @media (min-width: $screen-xl) {
-            margin-right: 0;
-          }
+          width: 100%;
         }
       }
 
       @media (min-width: $screen-md) {
-        width: calc(45% - 10px);
+        width: calc(65% - 10px);
       }
 
       @media (min-width: $screen-xl) {
@@ -156,21 +150,13 @@
       }
 
       @media (min-width: $screen-md) {
-        width: calc(55% - 10px);
+        width: calc(35% - 10px);
       }
 
       @media (min-width: $screen-xl) {
         width: 100%;
       }
     }
-  }
-
-  &__item {
-
-  }
-
-  &__link {
-
   }
 
   &__contacts {
