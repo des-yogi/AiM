@@ -1,3 +1,3 @@
 # AiM
 Производитель товаров для единоборств
-https://aim.kiev.ua
+https://des-yogi.github.io/AiM/
